@@ -3,19 +3,292 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Youtube</title>
+    <title>Youtube Clone</title>
     <meta name="description" content="A web development homework project creating a YouTube clone. This project includes a custom logo, sidebar navigation, video thumbnails, and a search bar, with requirements to add Google Analytics and host the project on a live site.">
-    <meta name="keywords" content="YouTube clone, video browsing, web design, HTML, CSS, Google Analytics">
+    <meta name="keywords" content="YouTube clone, video browsing, web design, HTML, CSS, Google Analytics, Github">
     <meta name="author" content="Vesa Qilerxhiu">
     <link rel="stylesheet" href="./css/index.css">
+    <link rel="icon" href="./assets/images/youtube-icon.png" type="image/png">
+
 
     <!-- MOS HARRO SCR TE GOOGLE ANALYTICS SA VETA TA KANE PA SITE -->
-     
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 <body>
 
-    <h1>YouTube Clone</h1>    
+    <div class="container">
+
+        <!-- Header -->
+        <div class="header">
+            <div class="logo">
+                <img src="./assets/images/youtube-logo.png">
+            </div>
+            <div class="search-area">
+                <div class="search-bar">
+                    <input type="text" placeholder="Search">
+                    <button type="submit">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </div>
+                <button class="search-circle">
+                    <i class="fa-solid fa-microphone"></i>
+                </button>
+            </div>
+            <div class="header-links">
+                <a href="#" class="link-circle">
+                    <i class="fa-regular fa-square-plus"></i>
+                </a>
+                <a href="#" class="link-circle">
+                    <i class="fa-regular fa-bell"></i>
+                </a>
+                <a href="#" class="link-circle">
+                    <i class="fa-solid fa-user"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- Content -->
+        <div class="content">
+
+            <!-- Sidebar -->
+            <div class="sidebar">
+                <ul class="sidebar-links">
+                    <li>
+                        <a href="#" class="active">
+                            <i class="fa-solid fa-house"></i>
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-film"></i>
+                            Shorts
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-inbox"></i>
+                            Subscriptions
+                        </a>
+                    </li>
+
+                    <hr> 
+
+                    <li>
+                        <a href="#" class="you-link">
+                            You
+                            <i class="fa-solid fa-angle-right"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-regular fa-address-book"></i>
+                            Your channel
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-clock-rotate-left"></i>
+                            History
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-list-ul"></i>
+                            Playlists
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-regular fa-circle-play"></i>
+                            Your videos
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-regular fa-clock"></i>
+                            Watch later
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-regular fa-thumbs-up"></i>
+                            Liked videos
+                        </a>
+                    </li>
+
+                    <hr>
+
+                    <li>
+                        <a href="#" class="you-link">
+                            Explore
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-fire"></i>
+                            Trending
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-podcast"></i>
+                            Podcasts
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-tower-broadcast"></i>
+                            Live
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                            Shopping
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-medal"></i>
+                            Sports
+                        </a>
+                    </li>
+
+                    <hr>
+
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-gear"></i>
+                            Settings
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-regular fa-flag"></i>
+                            Report history
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-regular fa-circle-question"></i>
+                            Help
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-circle-exclamation"></i>
+                            Send feedback
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Main -->
+            <div class="main">
+                <ul class="filters">
+                    <li><a href="#" class="active">All</a></li>
+                    <li><a href="#">Music</a></li>
+                    <li><a href="#">Jazz Piano</a></li>
+                    <li><a href="#">Mixes</a></li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Gaming</a></li>
+                    <li><a href="#">Olympics</a></li>
+                    <li><a href="#">Computer Science</a></li>
+                    <li><a href="#">Machine Learning</a></li>
+                    <li><a href="#">Meditation</a></li>
+                    <li><a href="#">Fitness</a></li>
+                    <li><a href="#">Health</a></li>
+                </ul>
+
+                <div class="video-grid">
+                    <div class="single-video">
+                        <iframe src="https://www.youtube.com/embed/Hz2F_S3Tl0Y" title="YouTube video player" allowfullscreen></iframe>
+                        <p class="video-title">I Jumped From Space (World Record)</p>
+                        <p class="video-user">Red Bull <i class="fa-solid fa-circle-check"></i></p>
+                        <div class="video-info">
+                            <p>33M views</p>
+                            &#x2022;
+                            <p>2 years ago</p>
+                        </div>
+                    </div>
 
 
+                    <div class="single-video">
+                        <iframe src="https://www.youtube.com/embed/1ZYbU82GVz4" title="YouTube video player" allowfullscreen></iframe>
+                        <p class="video-title">Relaxing Music for Meditation and Stress Relief</p>
+                        <p class="video-user">Soothing Relaxation <i class="fa-solid fa-circle-check"></i></p>
+                        <div class="video-info">
+                            <p>439M views</p>
+                            &#x2022;
+                            <p>8 years ago</p>
+                        </div>
+                    </div>
+
+                    <div class="single-video">
+                        <iframe src="https://www.youtube.com/embed/4RixMPF4xis" title="YouTube video player" allowfullscreen></iframe>
+                        <p class="video-title">AI vs Machine Learning</p>
+                        <p class="video-user">IBM Technology <i class="fa-solid fa-circle-check"></i></p>
+                        <div class="video-info">
+                            <p>1.1M views</p>
+                            &#x2022;
+                            <p>1 year ago</p>
+                        </div>
+                    </div>
+
+                    <div class="single-video">
+                        <iframe src="https://www.youtube.com/embed/JfVOs4VSpmA" title="YouTube video player" allowfullscreen></iframe>
+                        <p class="video-title">SPIDER-MAN: NO WAY HOME - Official Trailer (HD)</p>
+                        <p class="video-user">Sony Pictures Entertainment <i class="fa-solid fa-circle-check"></i></p>
+                        <div class="video-info">
+                            <p>83M views</p>
+                            &#x2022;
+                            <p>2 years ago</p>
+                        </div>
+                    </div>
+
+                    <div class="single-video">
+                        <iframe src="https://www.youtube.com/embed/mJ6C0s_GGj4" title="YouTube video player" allowfullscreen></iframe>
+                        <p class="video-title">Fruit Salad in 5 minutes</p>
+                        <p class="video-user">Preppy Kitchen <i class="fa-solid fa-circle-check"></i></p>
+                        <div class="video-info">
+                            <p>548k views</p>
+                            &#x2022;
+                            <p>4 years ago</p>
+                        </div>
+                    </div>
+
+                    <div class="single-video">
+                        <iframe src="https://www.youtube.com/embed/REDVbTQxMXo" title="YouTube video player" allowfullscreen></iframe>
+                        <p class="video-title">Paris: The last drone aerials</p>
+                        <p class="video-user">Timelab Pro <i class="fa-solid fa-circle-check"></i></p>
+                        <div class="video-info">
+                            <p>1M views</p>
+                            &#x2022;
+                            <p>1 year ago</p>
+                        </div>
+                    </div>
+
+                  </div>
+                  
+            </div>
+
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            --            
+        </div>
+
+    </div>
+    
 </body>
 </html>

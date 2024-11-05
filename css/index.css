@@ -1,3 +1,259 @@
-body {
-    background-color: aqua;
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
+
+body {
+    padding: 0 17px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+}
+
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+}
+
+
+.logo img {
+  width: 90px;
+  height: 20px;
+}
+
+.search-area {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.search-circle {
+  display: inline-flex; 
+  justify-content: center; 
+  align-items: center; 
+  width: 37px; 
+  height: 37px; 
+  border: none;
+  border-radius: 50%;
+  background-color: #f2f2f2; 
+  color: #333;
+  margin-left: 12px;
+  cursor: pointer;
+}
+
+.search-circle:hover {
+  background-color: #d9d9d9;
+}
+
+/* Container for the search bar */
+.search-bar {
+    display: flex;
+    border-radius: 25px;
+    width: 500px;
+    background-color: white;
+  }
+  
+/* Search input field */
+.search-bar input[type="text"] {
+  border: 1px solid #ccc;
+  outline: none;
+  padding: 10px;
+  text-indent: 5px;
+  flex: 1;
+  border-radius: 25px 0 0 25px;
+  font-size: 14px;
+}
+
+.search-bar input:focus {
+  border-color: #1c62b9;
+
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="%23333" stroke-width="1.2" width="20" height="20"><circle cx="10" cy="10" r="6" stroke-linecap="round" stroke-linejoin="round"/><line x1="15.5" y1="15.5" x2="20" y2="20" stroke-linecap="round" stroke-linejoin="round"/></svg>');
+  background-repeat: no-repeat;
+  background-position: 15px center;
+  margin-left: -30px;
+  text-indent: 35px;
+}
+
+/* Search button */
+.search-bar button {
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  border-left: none;
+  border-radius: 0 25px 25px 0;
+  cursor: pointer;
+  padding: 10px 15px;
+  display: flex;
+  align-items: center;
+  color: #333;
+}
+
+/* Change color on hover */
+.search-bar button:hover {
+  background-color: #f0f0f0;
+}
+
+.header-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.link-circle {
+  text-decoration: none;
+  display: inline-flex; 
+  justify-content: center; 
+  align-items: center; 
+  width: 33px; 
+  height: 33px; 
+  border-radius: 50%;
+  color: #333;
+  margin-left: 8px;
+}
+
+.link-circle:last-child {
+  background-color: #f2f2f2;
+}
+
+.link-circle:hover {
+  background-color: #d9d9d9;
+}
+
+
+
+.content{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  column-gap: 30px;
+}
+
+.main {
+  flex: 1;
+}
+
+/* SIDEBAR */
+.sidebar {
+    flex: 0 0 15%;
+}
+
+
+.sidebar-links {
+  list-style-type: none;   
+}
+
+.sidebar-links li {
+  /* padding: 10px; */
+}
+
+.sidebar-links li i {
+  margin-right: 15px;
+}
+
+.sidebar-links li a {
+  display: block;
+  text-decoration: none;
+  padding: 10px;
+  color: #333;
+  border-radius: 10px;
+}
+
+.sidebar-links li a:hover {
+  background-color: #f2f2f2;
+}
+
+.sidebar-links li a.active {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+.sidebar-links hr {
+  border: none;
+  height: 0.5px;
+  background-color: #d9d9d9;
+  margin: 10px 0;
+}
+
+.you-link {
+  font-weight: bold;
+  font-size: 14.5px;
+}
+
+.you-link i {
+  margin-left: 5px;
+}
+
+/* Main */
+
+.main .filters {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.filters li a {
+  display: inline-block;
+  text-decoration: none;
+  background-color: #f2f2f2;
+  color: #333;
+  border-radius: 6px;
+  padding: 5px 10px;
+  font-weight: 500;
+}
+
+.filters li:not(:first-child) a:hover {
+  background-color: #e5e5e5;
+}
+
+.filters .active {
+  background-color: #0f0f0f;
+  color: white;
+}
+
+
+/* Video in main */
+.video-grid {
+  display: grid;
+  gap: 15px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+}
+
+.video-grid iframe {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: none;
+  border-radius: 12px;
+}
+
+.single-video {
+
+}
+
+.video-title {
+  font-weight: bold;
+  font-size: 13.5px;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.video-user {
+  color: #6d6d6d;
+  font-size: 12px;
+}
+
+.video-info {
+  display: flex;
+  gap: 5px;
+  color: #6d6d6d;
+  font-size: 12px;
+}
+
+
