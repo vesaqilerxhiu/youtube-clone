@@ -115,24 +115,6 @@ body {
   width: 550px;
 }
 
-.search-circle {
-  display: inline-flex; 
-  justify-content: center; 
-  align-items: center; 
-  width: 37px; 
-  height: 37px; 
-  border: none;
-  border-radius: 50%;
-  background-color: #f2f2f2; 
-  color: #333;
-  margin-left: 12px;
-  cursor: pointer;
-}
-
-.search-circle:hover {
-  background-color: #d9d9d9;
-}
-
 .search-bar {
     display: flex;
     border-radius: 25px;
@@ -175,6 +157,24 @@ body {
   background-color: #f0f0f0;
 }
 
+.search-circle {
+  display: inline-flex; 
+  justify-content: center; 
+  align-items: center; 
+  width: 37px; 
+  height: 37px; 
+  border: none;
+  border-radius: 50%;
+  background-color: #f2f2f2; 
+  color: #333;
+  margin-left: 12px;
+  cursor: pointer;
+}
+
+.search-circle:hover {
+  background-color: #d9d9d9;
+}
+
 .header-links {
   display: flex;
   justify-content: center;
@@ -204,13 +204,8 @@ body {
 .content{
   display: flex;
   justify-content: space-between;
-  /* border: 2px solid black; */
   column-gap: 30px;
   margin-bottom: 10px;
-}
-
-.main {
-  flex: 1;
 }
 
 /* SIDEBAR */
@@ -260,6 +255,10 @@ body {
 }
 
 /* Main */
+.main {
+  flex: 1;
+}
+
 .main .filters {
   list-style-type: none;
   display: flex;
@@ -284,7 +283,7 @@ body {
   text-overflow: ellipsis; 
 }
 
-.filters li:not(:first-child) a:hover {
+.filters li a:not(.active):hover {
   background-color: #e5e5e5;
 }
 
