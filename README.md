@@ -3,4 +3,4 @@ This project is a front-end replica of the YouTube homepage, designed to showcas
 
 ## Live Demo 🌐    
 You can explore the live version of this project here:  
-[Youtube Clone] https://vesaqilerxhiu.github.io/youtube-clone/ 
+[Youtube Clone] (https://vesaqilerxhiu.github.io/youtube-clone/)
